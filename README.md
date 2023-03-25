@@ -11,7 +11,6 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 # 1.2 Masscan
 - masscan -p1-65535 192.168.0.0/16
 - masscan -p1-65535,U:1-65535 --rate 10000 --wait 0 --open-only target
-- nmap -p 1-65535 -sV -sS -T4 target
 
 # Chapter 2: Testing Web Applications
 
