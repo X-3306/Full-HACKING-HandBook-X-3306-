@@ -1,4 +1,4 @@
-# Full HACKING HandBook X-3306 [2023]
+# Full HACKING HandBook {2023}           \[X-3306]/
 Typical tools/commands for ethical hackers, pentesting and everyone!
 
 
