@@ -18,11 +18,15 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 - Repeater
 - Intruder
 - sequencer
+- Comparer 
 
 2.2 OWASP ZAP
 - Spider
 - Fuzzer
 - Passive Scan
+- Active Scan 
+- Forced Browse 
+- Export Report 
 
 # Chapter 3: Source code analysis
 
@@ -36,6 +40,7 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 
 4.1 Hydra
 - hydra -l admin -P /path/to/list/password ftp://192.168.1.1
+- hydra -l root -P /path/to/passwords ssh://192.168.1.1 
 
 4.2 John the Ripper
 - john --wordlist=/path/to/list/hash.txt
@@ -44,6 +49,7 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 
 5.1 SQLMap
 - sqlmap -u "http://example.com/?id=1" --dbs
+- sqlmap -u "http://example.com/?id=1" --dbs --columns -T users 
 
 5.2 NoSQLMaps
 - nosqlmap -t http://example.com -p 80 -u /path/to/db
@@ -53,15 +59,17 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 6.1 Ghidra
 - Decompiler
 - Code Analyzer
+- Script Manager 
+- Hex Viewer 
 
 6.2 Radar2
 - r2 /path/to/file/binary
 - ah
-- s main
-- VV
 - radare2 binary_file
-- aaa
-- afl
+[0x00000000]> aa 
+[0x00000000]> afl 
+[0x00000000]> s main 
+[0x00000000]> VV 
 
 23.2 GDB-PEDA
 - gdb -q binary_file
@@ -87,6 +95,8 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 
 8.2 Exploit Database
 - searchsploit apache 2.2
+- searchsploit Apache Tomcat  
+
 
 # Chapter 9: Testing Wireless Systems
 
