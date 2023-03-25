@@ -6,6 +6,14 @@ Typical tools/commands for ethical hackers, pentesting ant everyone!
 - nmap -p 1-65535 192.168.1.1
 - nmap -sV 192.168.1.1
 - nmap -O 192.168.1.1
+- nmap -p 1-65535 -sV -sS -T4 target
+
+1.2 Masscan
+- masscan -p1-65535,U:1-65535 --rate 10000 --wait 0 --open-only target
+- nmap -p 1-65535 -sV -sS -T4 target
+
+1.2 Masscan
+- masscan -p1-65535,U:1-65535 --rate 10000 --wait 0 --open-only target
 
 # 1.2 Masscan
 - masscan -p1-65535 192.168.0.0/16
@@ -57,6 +65,14 @@ Typical tools/commands for ethical hackers, pentesting ant everyone!
 - ah
 - s main
 - VV
+- radare2 binary_file
+- aaa
+- afl
+
+23.2 GDB-PEDA
+- gdb -q binary_file
+- break main
+- run
 
 # Chapter 7: Testing the Network Infrastructure
 
@@ -84,9 +100,11 @@ Typical tools/commands for ethical hackers, pentesting ant everyone!
 - airmon-ng start wlan0
 - airodump-ng wlan0mon
 - aireplay-ng -0 5 -a BSSID -c CLIENT wlan0mon
+- aircrack-ng -b BSSID -w wordlist.txt capture.cap
 
 9.2 WiFi
 - wifite -w WPA
+- wifite --kill -mac -c CHANNEL -b BSSID
 
 # Chapter 10: Vulnerability analysis and risk management
 
@@ -197,3 +215,28 @@ Typical tools/commands for ethical hackers, pentesting ant everyone!
 20.2 Kube Bench
 - kube-bench master
 - kube-bench node
+
+# Chapter 21: Analysis and Reverse Engineering of Malware
+
+24.1 Cuckoo Sandbox
+- cuckoo submit sample.exe
+- cuckoo
+
+24.2 YARA
+- yara -r my_rule.yar /path/to/analyze/
+
+# Chapter 22: Security testing in SCADA/ICS environments
+
+25.1 PLCScan
+- python3 plcscan.py --target IP_ADDRESS
+
+25.2 Nmap
+- nmap --script=modbus-discover,nntp-info IP_ADDRESS
+
+# Chapter 23: Using Artificial Intelligence to Investigate Vulnerabilities
+
+26.1 DeepExploit
+- python3 deep_exploit.py -t TARGET_IP
+
+26.2 AutoSploit
+- python autosploit.py --set target TARGET_IP
