@@ -66,9 +66,13 @@ Typical tools/commands for ethical hackers, pentesting and everyone!
 - r2 /path/to/file/binary
 - ah
 - radare2 binary_file
+
 [0x00000000]> aa 
+
 [0x00000000]> afl 
+
 [0x00000000]> s main 
+
 [0x00000000]> VV 
 
 23.2 GDB-PEDA
