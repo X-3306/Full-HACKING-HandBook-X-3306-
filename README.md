@@ -1,5 +1,5 @@
 # Full HACKING HandBook {2023}           [X-3306]
-Typical tools/commands for ethical hackers, pentesting and everyone!
+Typical tools/commands for ethical hackers, pentesters and everyone!
 
 
 # 1.1 Nmap
